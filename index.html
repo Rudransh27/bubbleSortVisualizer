@@ -3,9 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bubble Sort Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Sea Bubble Sort Visualizer</title>
 </head>
 <body>
-    <h1>Sorting Visualizer</h1>
+    <div class="sea">
+        <img src="fish-removebg-preview.png" alt="Fish Image" class="fish">
+        <div class="controls">
+            <label for="arrayInput">Enter an array (comma-separated):</label>
+            <input type="text" id="arrayInput" placeholder="e.g., 5,3,8,1,4,6">
+            <button onclick="generateFromArray()">Generate Array</button>
+            <button onclick="startSorting()">Start Sorting</button>
+            <button onclick="resetArray()">Generate New Array</button>
+        </div>
+        <div class="bubbles" id="bubbles"></div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
